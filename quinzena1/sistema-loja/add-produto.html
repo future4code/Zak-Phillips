@@ -5,45 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adicionar Produto</title>
+    <link id="store_face" rel="stylesheet" href="Styles.css">
 </head>
 <body>
+    <span>
+        <img id="store_face" src="img\pixel_coffee_1.gif" alt="pixel coffee art">
+    </span>
+
     <div>
-        <p>Cafeteria l'appel du vide</p>
+        <p class="store_name2">Pixel Coffee</p>
     </div>
     
-    <div>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
-    </div>
+    <nav class="navigation">
+       <a href="index.html">Home Page</a>
+        <a href="ctrl-estoque.html">Stock Control</a>
+        <a href="add-produto.html">Add Product</a>
+        <a href="funcionarios.html">Employee</a>
+    </nav>
     
     <h2>Adicionar Produto</h2>
-    <form action="">
-        <div>
-            <label for="link-foto">Link para foto: </label>
+    <form class="form-add" action="">
+        <div class="form-add2">
+            <label for="link-foto">Picture link: </label>
             <input type="url" id="link-foto" name="link-foto">
         </div>
         
-        <div>
-            <label for="descricao">Descrição do produto: </label>
+        <div class="form-add2">
+            <label for="descricao">Description: </label>
             <!-- Adicione o id apropriado para o input abaixo -->
             <input type="text" id="descrição" name="descrição">
         </div>
         
-        <div>
-            <label for="preco">Preço (em R$): </label>
+        <div class="form-add2">
+            <label for="preco">Price (in R$): </label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
             <input type="number" id="preço" name="preço">
         </div>
         
-        <div>
+        <div class="form-add2">
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label for="quantidade_disponivel">Quantidade disponível: </label>
+            <label  for="quantidade_disponivel">Quantity Available: </label>
             <input type="number" id="quantidade_disponivel" name="Quantidade disponível">
         </div>
 
-        <div class="form-add">
+        <div>
             <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
             <button type="submit">Adicionar</button>
         </div>
