@@ -1,0 +1,106 @@
+body {
+  background-image: url("img/pixel_background_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div {
+  height: 70px;
+  padding-top: 20px;
+}
+
+.store_name {
+  height: 100px;
+  padding-top: 15px;
+  padding-bottom: 2px;
+}
+
+.store_name2 {
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+h2 {
+  height: 50px;
+  padding-top: 1px;
+}
+
+#store_face {
+  border-radius: 15%;
+  width: 30vw;
+}
+
+.main_title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.sub_title {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  padding: 20px 5px 20px 5px;
+  border-style: outset;
+  background-color: rgba(106, 90, 205, 0.5);
+  margin-right: 50px;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+}
+
+#store_name {
+  padding: 25px 50px 25px 50px;
+}
+
+.social {
+  width: 5vw;
+  height: 5vw;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.table1 {
+    display: flex;
+    justify-content: center; 
+}
+.son_of_table {
+  padding-left: 2px;
+  height: 70px;
+  padding-top: 20px; 
+ text-align: center;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px 8px;
+    background-color: rgba(106, 90, 205, 0.5);
+}
+
+.form-add {
+    border: 2px solid black;
+    padding: 5px 8px;
+    background-color: rgba(106, 90, 205, 0.5);
+}
+
+.form-add2 {
+    border: 1px solid black;
+    padding: 5px 8px; 
+}
