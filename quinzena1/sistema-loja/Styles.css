@@ -48,6 +48,13 @@ h2 {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+.sub_title2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
 span {
   display: flex;
   justify-content: center;
@@ -57,7 +64,7 @@ a {
   padding: 20px 5px 20px 5px;
   border-style: outset;
   background-color: rgba(106, 90, 205, 0.5);
-  margin-right: 50px;
+  margin-right: 10px;
   font-weight: bold;
   font-family: "Lucida Console", "Courier New", monospace;
   text-decoration: none;
@@ -85,7 +92,7 @@ a {
   padding-left: 2px;
   height: 70px;
   padding-top: 20px; 
- text-align: center;
+  text-align: center;
 }
 
 td, th {
@@ -98,9 +105,29 @@ td, th {
     border: 2px solid black;
     padding: 5px 8px;
     background-color: rgba(106, 90, 205, 0.5);
+    text-align: center;
+    width: 40vw;
+    margin: auto;
+
+    
 }
 
 .form-add2 {
     border: 1px solid black;
     padding: 5px 8px; 
+}
+
+.form-add3 {
+  border: 1px solid black;
+  padding: 5px 8px; 
+}
+
+.social2 {
+  border-style: outset;
+  background-color: rgba(106, 90, 205, 0.5);
+  font-weight: bold;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none;
+  width: 15vw;
+  height: 15vw;
 }
