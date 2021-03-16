@@ -43,6 +43,14 @@ td img {
     height: 25px;
 }
 
+.icone:hover {
+    opacity: 0.2;
+}
+
+.icone:active{
+ opacity: 1;
+}
+
 .botao-amarelo {
     background-color: #ffaf43;
     width: 250px;
@@ -58,7 +66,6 @@ td img {
 
 .container {
     height: 280px;
-    text-align: center;
 }
 
 .icone {
@@ -108,7 +115,6 @@ table {
     width: 60%;
     text-align: center;
     margin-left: 250px;
-    border-bottom: solid 4px black;
 }
 
 td button {
@@ -125,7 +131,15 @@ td button:hover {
 
 .container-do-search {
     margin-top: 20px;
-    height: 100px;
+    margin-bottom: 30px;
+    margin-left: 360px; 
+    height: 30px;
+    width: 560px;
+    border-bottom: solid 2px black;
+}
+
+.search {
+    border-bottom: solid 4px black;
 }
 
 
