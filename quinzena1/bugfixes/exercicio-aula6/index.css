@@ -107,6 +107,7 @@ table {
     width: 60%;
     text-align: center;
     margin-left: 250px;
+    border-bottom: solid 4px black;
 }
 
 td button {
@@ -139,4 +140,8 @@ td button:hover {
 
 #back-button:hover {
     background-color: #635a3d;
+}
+
+form {
+    margin-top: 25px;
 }
