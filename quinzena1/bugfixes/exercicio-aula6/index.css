@@ -68,6 +68,17 @@ td img {
     height: 280px;
 }
 
+ol {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+margin-left: 20px;
+text-align: center;
+}
+
 .icone {
     height: 15px;
 }
@@ -86,7 +97,7 @@ td img {
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    padding: 15px 550px;
 }
 
 #container-para-comprar {
