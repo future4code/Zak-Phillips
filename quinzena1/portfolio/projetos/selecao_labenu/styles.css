@@ -1,0 +1,101 @@
+body {
+    color:#fbfff7;
+    margin: 0;
+    padding: 0;
+}
+
+#top_section {
+  background-color: #cc4d00;
+  text-align: center;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+#mid_section {
+    background-color:#595e96;
+    padding-top: 2vh;
+    height: 80vh ;
+    text-align: center;
+}
+
+#logo {
+  text-align: center;
+}
+
+img {
+  width: 30vw;
+  margin: 5vh 0;
+} 
+
+.announcements {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#post_1 {
+  background-color: #95c47e;
+  color: #fbfff7;
+  border: none;
+  cursor: pointer;
+  height: 75px;
+  margin: 7px;
+  font-style: italic;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+#post_2 {
+  background-color: #e06665;
+  color: #fbfff7;
+  border: none;
+  cursor: pointer;
+  height: 75px;
+  margin: 7px;
+  font-style: italic;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+#post_3 {
+  background-color: #6d9eeb;
+  color: #fbfff7;
+  border: none;
+  cursor: pointer;
+  height: 75px;
+  margin: 7px;
+  font-style: italic;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+#class_year {
+  text-align: end;
+  font-style: italic
+}
+
+.login_box {
+  background-color: #d8d8d8;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block-end: 45px;
+}
+
+#send {
+  background-color: #cc4d00;
+  color: #fbfff7;
+  border: none;
+  cursor: pointer;
+  height: 7vh;
+}
+#box{
+  height: 6vh;
+  width: 32vw;
+}
+#text1 {
+  font-weight: bold;
+  font-family: Arial;
+}
