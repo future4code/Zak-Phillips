@@ -4,9 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto F4Life</title>
 </head>
 <body>
+    <header>
+        <div>
+            <img class="logo" src="img\Logos\f4life_logo.png" alt="logo do f4life">
+        </div>
+        <div>
+            <br><h1>F4Life</h1><br>
+            <p>Encontre o espaço perfeito para sua vida universitária aqui!</p>
+        </div>
+    </header>
+
+    <main>
+
+        <article>
+            <div class="info">
+                <br><h1>Temos espaços para todas as necessidades!<br> 
+                    Seja em grupo ou sozinho(a) temos o local certo para você!</h1><br>
+                
+                <p>Nós, da F4life temos o comprometimento de te ajudar a achar a moradia universitária<br>
+                   que melhor satisfaça suas necessidades, levando sempre em consideração a localização e mantendo<br>
+                   opções de valor acessivel para todos os bolsos.</p>
+            </div>
+
+            <section class="rooms">
+                <h2>Dormitórios compartilhados</h2>
+                <figure>
+                    <img class="room_img" src="img\Rooms\dormitorio_1.jpg" alt="Dormitorio">
+                    <img class="room_img" src="img\Rooms\dormitorio_2.png" alt="Dormitorio">
+                    <img class="room_img" src="img\Rooms\dormitorio_3.jpg" alt="Dormitorio">
+                    <img class="room_img" src="img\Rooms\dormitorio_4.jpg" alt="Dormitorio">
+                </figure>
+            </section>
+   
+            <section class="rooms">
+                <h2>Kitnets</h2>
+                <figure>
+                    <img class="room_img" src="img\Rooms\Kitnet_1.jpg" alt="kitnet">
+                    <img class="room_img" src="img\Rooms\Kitnet_2.jpg" alt="kitnet">
+                    <img class="room_img" src="img\Rooms\Kitnet_3.png" alt="kitnet">
+                    <img class="room_img" src="img\Rooms\Kitnet_4.jpg" alt="kitnet">
+                </figure>
+            </section>
+        </article>
+
+        <aside>
+            <h2>Busque por imôveis na sua região!</h2><br>
+            <form action="">
+                <label for="regiao">Estado</label><br>
+                <select id="regiao">
+                    <option>......</option><option>AC</option> <option>AL</option> <option>AP</option> <option>AM</option> <option>BA</option> 
+                    <option>CE</option> <option>DF</option> <option>ES</option> <option>GO</option> <option>MA</option>
+                    <option>MT</option> <option>MS</option> <option>MG</option> <option>PA</option> <option>PB</option>
+                    <option>PR</option> <option>PE</option> <option>PI</option> <option>RJ</option> <option>RN</option>
+                    <option>RS</option> <option>RO</option> <option>RR</option> <option>SC</option> <option>SP</option>
+                    <option>SE</option> <option>TO</option>
+                </select><br>
+                <label for="cidade">Cidade</label><br>
+                <input type="text" id="cidade" name=""><br>
+                <label for="bairro">Bairro</label><br>
+                <input type="text" id="bairro" name=""><br><br>
+                <p>Preferência de coabitação:</p><br>
+                <input type="radio" id="masculino" name="gender" value="M">
+                <label for="masculino">Masculina</label><br>
+                <input type="radio" id="feminino" name="gender" value="F">
+                <label for="feminino">Feminina</label><br>
+                <input type="radio" id="outro" name="gender" value="O">
+                <label for="">Mista</label><br><br>
+                <p>Tipo de imóvel</p><br>
+                <input type="radio" id="dormitorio" name="tipo" value="K">
+                <label for="dormitorio">Dormitórios</label><br>
+                <input type="radio" id="kitnet" name="tipo" value="D">
+                <label for="kitinet">Kitnets</label><br><br>
+                <label for="valor">Valor máximo</label><br>
+                <input type="text" id="valor" name="" value="Em R$:"><br><br>
+                <input type="submit" value="submit">
+            </form>
+        </aside>
+
+        <article class="info">
+            <details>
+                <summary>Quem somos</summary>
+                <p>Somos uma empresa com mais de 3 dias de historia no ramo de venda e alugueis de imóveis,
+                    focada em ambientes universitários. Buscamos manter uma seleção ampla de imóveis acessíveis para
+                    todos os bolsos e situações, para grandes grupos e para indivíduos.</p>
+            </details>
+            <details>
+                <summary>Nosso time</summary>
+                <p>Nosso time é composto por 1 pessoa, o editor dessa pagina (Zak A.Phillips) responsável pelo 
+                    marketing, web designer e edição.</p>
+            </details>
+            <details>
+                <summary>Onde estamos</summary>
+                <p>Nossa empresa é inteiramente localizada no meu quarto e faz todas as suas atividades remotamente.</p>
+            </details>
+        </article>
+    </main>
     
+    <footer>
+        <div>
+            <img class="logo" src="img\Logos\f4life_logo.png" alt="logo do f4life">
+        </div>
+        <div>
+            <h2>Contato:</h2>
+            <p>Telefone: (55)00 9999-9999<br>Email: f4life@email.com<p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="img\Logos\facebook_logo.png" alt="facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="img\Logos\instagram_logo.png" alt="instagram"></a>
+            <a href="https://twitter.com" target="_blank"><img class="social" src="img\Logos\twitter_logo.png" alt="twitter"></a>
+        </div>
+
+    </footer>
 </body>
 </html>
