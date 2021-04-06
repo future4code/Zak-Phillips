@@ -1,0 +1,168 @@
+/* Divisão e ajustes do da pagina*/
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:cornsilk
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 20vh 250vh 22vh;
+    background-color:aqua;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 8vw 92vw;
+    background-color: grey;
+    border: solid black 1px;
+    grid-row: 1/2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 8vh;
+    margin-top: 10vh;
+    grid-row: 2/3;
+}
+/*Ajustes das seções com fotos dos quartos*/
+.rooms {
+    background-color: rgb(25, 38, 63);
+    padding: 5vh 5vw 5vh 5vw;
+    border-radius: 15px;
+    border: solid black 2px;    
+}
+
+.room_img{
+    height: 10vw;
+    width: 12vw;
+}
+
+section {
+    margin: 10vh;
+}
+/*Estilisação da área lateral de busca*/
+aside {
+    background-color:  rgb(25, 38, 63);
+    color: honeydew;
+    border-radius: 15px;
+    border: solid black 2px;
+    margin-right: 2vw;
+    grid-column: 2/3;
+}
+/*Ajustes e posicionamento do footer*/
+footer {
+   display: grid;
+   grid-template-columns: 8vw 3fr 1fr;
+   background-color: rgb(80, 80, 80);
+   grid-row: 3/4;
+}
+/*Dimensionamento do logo*/
+.logo {
+    height: 8vw;
+    width: 8vw;
+    margin-left: 10px;
+}
+/*Dimensionamento das redes socias*/
+.social {
+    height: 5vw;
+    width: 5vw;
+    border: none;
+    margin-top: 5vh;
+}
+
+img {
+    border: solid black 2px;
+    margin: 8px;
+}
+/*Ajustes e dimensionamento de 2 seções informativas*/
+.info {
+    background-color:rgb(25, 38, 63);
+    border-radius: 15px;
+    width: 70%;
+    height: 25vh;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    border: solid black 2px;
+}
+
+#regiao, input {
+    color:black;
+}
+
+option {
+    color:black;
+}
+/*Tamanho de fonte*/
+h1{
+    font-size: 2vw;
+}
+
+h2 {
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 1.3vw;
+}
+/*tentativa de ajuste para outras telas*/
+@media only screen and (max-width: 800px) {
+    body {
+        grid-template-rows: 20vh 240vh 22vh;
+    }
+
+    .room_img{
+        width: 18vw;
+        height: 14vw;
+    }
+
+    .logo {
+        width: 12vw;
+        height: 12vw;
+    }
+
+    h1{
+        font-size: 1.8vw;
+    }
+    
+    h2 {
+        font-size: 1.8vw;
+    }
+    
+    p {
+        font-size: 1.6vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-rows: 20vh 260vh 22vh;
+    }
+
+    .room_img{
+        width: 22vw;
+        height: 18vw;
+    }
+
+    .logo {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    h1{
+        font-size: 2vw;
+    }
+    
+    h2 {
+        font-size: 2vw;
+    }
+    
+    p {
+        font-size: 1.8vw;
+    }
+}
