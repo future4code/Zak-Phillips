@@ -189,7 +189,7 @@ function ordenaArray(array) {
 function filmeFavorito() {
    // implemente sua lógica aqui
 
-   let favoritos = {
+   const favoritos = {
       nome: "O Diabo Veste Prada",
       ano: 2006,
       diretor: "David Frankel",
@@ -203,12 +203,32 @@ function filmeFavorito() {
 
 function imprimeChamada() {
    // implemente sua lógica aqui
+   
+   const favoritos = {
+      nome: "O Diabo Veste Prada",
+      ano: 2006,
+      diretor: "David Frankel",
+      atores: ["Meryl Streep", " Anne Hathaway", " Emily Blunt", " Stanley Tucci"],
+   }
+  
+   let convite = `Venha assistir ao filme ${favoritos.nome}, de ${favoritos.ano}, dirigido por ${favoritos.diretor} e estrelado por ${favoritos.atores}.`
+   
+   return convite
 }
 
 // Exercício 14
 
 function criaRetangulo(lado1, lado2) {
    // implemente sua lógica aqui
+
+   let meuRetangulo = {
+      largura: lado1,
+      altura: lado2,
+      perimetro: 2 * (lado1 + lado2),
+      area: lado1 * lado2,
+   }
+
+   return meuRetangulo
 }
 
 // Exercício 15
