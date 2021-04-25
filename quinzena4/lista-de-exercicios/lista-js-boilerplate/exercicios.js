@@ -48,6 +48,16 @@ function retornaNumerosPares (array) {
 
 function retornaMaiorNumero(array) {
    // implemente sua lógica aqui
+
+   let highestNumber = 0
+
+   for (let x = 0; x < array.length; x++) {
+      if (array[x] > highestNumber) {
+         highestNumber = array[x]
+      }
+   }
+   
+   return highestNumber;
 }
 
 //Exercício 5
