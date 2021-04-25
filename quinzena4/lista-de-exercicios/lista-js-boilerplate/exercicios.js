@@ -5,8 +5,8 @@ function inverteArray(array) {
 
   let myArray = [];
 
-  for (let x = array.length -1; x >= 0; x--) {
-     myArray.push(array[x])
+  for (let i = array.length -1; i >= 0; i--) {
+     myArray.push(array[i])
   }
   return myArray;
 }
@@ -19,9 +19,9 @@ function retornaNumerosParesElevadosADois (array) {
 
    let myArray = [];
 
-   for (let x = 0; x < array.length; x++) {
-      if (array[x] % 2 === 0) {
-         myArray.push(array[x]*array[x])
+   for (let i = 0; i < array.length; i++) {
+      if (array[i] % 2 === 0) {
+         myArray.push(array[i]*array[i])
       }
    }
 
@@ -35,9 +35,9 @@ function retornaNumerosPares (array) {
 
    let myArray = [];
 
-   for (let x of array) {
-      if (array[x] % 2 === 0) {
-         myArray.push(array[x])
+   for (let i of array) {
+      if (array[i] % 2 === 0) {
+         myArray.push(array[i])
       }
    }
 
@@ -51,9 +51,9 @@ function retornaMaiorNumero(array) {
 
    let highestNumber = 0
 
-   for (let x = 0; x < array.length; x++) {
-      if (array[x] > highestNumber) {
-         highestNumber = array[x]
+   for (let i = 0; i < array.length; i++) {
+      if (array[i] > highestNumber) {
+         highestNumber = array[i]
       }
    }
    
@@ -145,8 +145,37 @@ function comparaDoisNumeros(num1, num2) {
 
 function segundoMaiorEMenor(array) {
    // implemente sua lógica aqui
-}
+  
+   let arrayResultado = []
+   let maior = 0
+   let menor = Infinity
+   let segundoMaior = 0
+   let segundoMenor = Infinity
 
+   for (let i of array) {
+      if ( i > maior){
+         maior = i
+      }
+      if ( i < menor){
+         menor = i
+      }
+   }
+
+   for (let i of array) {
+      if ((i > segundoMaior) && (i !== maior)){
+         segundoMaior = i
+      }
+      if ((i < segundoMenor) && (i !== menor)){
+         segundoMenor = i
+      }
+   }
+
+   arrayResultado.push(segundoMaior)
+   arrayResultado.push(segundoMenor)
+   
+   
+   return arrayResultado
+}
 //Exercício 11
 
 function ordenaArray(array) {
