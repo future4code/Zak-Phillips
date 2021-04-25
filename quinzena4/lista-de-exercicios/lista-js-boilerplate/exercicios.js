@@ -72,12 +72,25 @@ function retornaQuantidadeElementos (array) {
 
 function retornaExpressoesBooleanas() {
    // implemente sua lógica aqui
+
+   const answers = [false, false, true, true, true]
+   return answers
 }
 
 //Exercício 7
 
 function retornaNNumerosPares(n) {
    // implemente sua lógica aqui
+   
+   const Npares = []
+
+   for (let i = 0; Npares.length < n ; i++) {
+      if (i % 2 === 0) {
+         Npares.push(i)
+      }
+   }
+
+   return Npares;
 }
 
 // Exercício 8
