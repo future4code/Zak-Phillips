@@ -16,6 +16,16 @@ function inverteArray(array) {
 
 function retornaNumerosParesElevadosADois (array) {
    // implemente sua lógica aqui
+
+   let myArray = [];
+
+   for (let x = 0; x < array.length; x++) {
+      if (array[x] % 2 === 0) {
+         myArray.push(array[x]*array[x])
+      }
+   }
+
+   return myArray;
 }
 
 //Exercício 3
