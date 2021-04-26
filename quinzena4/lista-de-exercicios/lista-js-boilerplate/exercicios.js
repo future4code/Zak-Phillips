@@ -316,12 +316,10 @@ function verificaParidade(array) {
       } else {
          parImpar = " é ímpar"
       }
-
-
      let temp = `${i}${parImpar}` 
      arrayResultado.push(temp)
    }
-   console.log(arrayResultado)
+  
   return arrayResultado
 }
 
@@ -340,6 +338,15 @@ const pessoas = [
 
 function retornaPessoasAutorizadas() {
    // implemente sua lógica aqui
+
+   let arrayResultado = [];
+
+   for(let i of pessoas) {
+      if (i.idade > 14 && i.altura >= 1.5 && i.idade < 60) {
+         arrayResultado.push(i)
+      }
+   }
+   return arrayResultado
 }
 
 
@@ -347,6 +354,15 @@ function retornaPessoasAutorizadas() {
 
 function retornaPessoasNaoAutorizadas() {
    // implemente sua lógica aqui
+
+   let arrayResultado = [];
+
+   for(let i of pessoas) {
+      if (i.idade < 14 || i.altura < 1.5 || i.idade >= 60) {
+         arrayResultado.push(i)
+      }
+   }
+   return arrayResultado
 }
 
 //Exercício 19
@@ -390,4 +406,17 @@ const contas = [
 
 function atualizaSaldo() {
   // implemente sua lógica aqui
+
+   contas.forEach(conta => {
+
+      let totalDeCompras = 0
+
+      conta.compras.forEach(valor => {
+         totalDeCompras += valor
+      })
+      
+      conta.saldoTotal -= totalDeCompras
+   })
+
+   return contas 
 }
