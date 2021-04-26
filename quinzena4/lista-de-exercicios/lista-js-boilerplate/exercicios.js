@@ -283,18 +283,46 @@ function menoresDe18(arrayDePessoas) {
 
 function multiplicaArrayPor2(array) {
    // implemente sua lógica aqui
+   let arrayResultado = []
+   for(let i of array) {
+      let temp = i*2
+      arrayResultado.push(temp)
+   }
+   return arrayResultado
 }
 
 // Exercício 17, letra B
 
 function multiplicaArrayPor2S(array) {
   // implemente sua lógica aqui
+  let arrayResultado = []
+  for(let i of array) {
+     let temp = String(i*2)
+     arrayResultado.push(temp)
+  }
+  return arrayResultado
+
 }
 
 // Exercício 17, letra C
 
 function verificaParidade(array) {
    // implemente sua lógica aqui
+   let arrayResultado = []
+  for(let i of array) {
+      let parImpar = ""
+      if(i % 2 === 0){
+         parImpar = " é par"
+      } else {
+         parImpar = " é ímpar"
+      }
+
+
+     let temp = `${i}${parImpar}` 
+     arrayResultado.push(temp)
+   }
+   console.log(arrayResultado)
+  return arrayResultado
 }
 
 // Exercício 18
