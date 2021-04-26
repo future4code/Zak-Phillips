@@ -378,6 +378,13 @@ const consultasNome = [
  
  function ordenaPorNome() {
   
+   let arrayResultado = []
+
+   arrayResultado = consultasNome.sort((a, b) => (a.nome > b.nome) ? 1 : -1)
+    
+   console.log(arrayResultado)
+   return arrayResultado
+
  }
  
  // Exercício 19, letra B
