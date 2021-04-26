@@ -243,7 +243,6 @@ function anonimizaPessoa(pessoa) {
       endereco: pessoa.endereco,
    }
 
-  
    return pessoaAnonima
 }
 
@@ -260,12 +259,24 @@ const arrayDePessoas = [
 
 function maioresDe18(arrayDePessoas) {
    // implemente sua lógica aqui
+
+  let arrayMaiores18 = arrayDePessoas.filter(pessoa => {
+     return pessoa.idade >= 18
+  })
+
+   return arrayMaiores18
 }
 
 // Exercício 16, letra B
 
 function menoresDe18(arrayDePessoas) {
    // implemente sua lógica aqui
+
+   let arrayMenores18 = arrayDePessoas.filter(pessoa => {
+      return pessoa.idade < 18
+   })
+   
+   return arrayMenores18
 }
 
 // Exercício 17, letra A
