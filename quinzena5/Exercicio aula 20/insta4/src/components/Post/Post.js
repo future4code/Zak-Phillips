@@ -129,6 +129,7 @@ class Post extends React.Component {
     if(this.state.comentando) {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
     }
+    
     const listaDeUsuarios = this.state.usuarioInfo.map((props) => {
       
       return (
